@@ -43,6 +43,10 @@ HTML, XML, JSON, TXT, imágenes (`.jpg`, `.png`) y EPUB.
 
 ## Cómo usar
 
+Hay dos formas de usarlo.
+
+### Opción A: modo terminal (por carpeta)
+
 1. Coloca tus documentos dentro de la carpeta `documentos/`.
 2. Ejecuta el script:
 
@@ -53,13 +57,25 @@ HTML, XML, JSON, TXT, imágenes (`.jpg`, `.png`) y EPUB.
 3. Los archivos `.md` aparecerán en la carpeta `resultados_markdown/`, listos para copiar
    a tu IA de preferencia.
 
+### Opción B: modo ventana (selección de archivos)
+
+1. Ejecuta la aplicación:
+
+   ```bash
+   python app.py
+   ```
+
+2. Usa los botones para seleccionar los archivos, elegir la carpeta de salida y convertir.
+   El resultado se guarda en la carpeta que elijas (por defecto, `resultados_markdown/`).
+
 ## Estructura del proyecto
 
 ```
 convertidor-markdown/
 ├── documentos/            <-- Coloca aquí tus archivos a convertir
 ├── resultados_markdown/   <-- Aquí aparecen los .md convertidos
-├── convertidor.py         <-- El script principal
+├── convertidor.py         <-- Script principal (modo terminal)
+├── app.py                 <-- Aplicación con ventana (modo gráfico)
 ├── requirements.txt       <-- Dependencias del proyecto
 ├── .gitignore             <-- Archivos que Git debe ignorar
 └── README.md              <-- Este archivo
