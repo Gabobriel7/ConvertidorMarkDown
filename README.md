@@ -1,37 +1,30 @@
-# 📄 Convertidor de Documentos a Markdown
+# Convertidor de Documentos a Markdown
 
-Convierte múltiples documentos (PDF, Word, Excel, PowerPoint, HTML y más) a
-formato **Markdown (`.md`)** de forma local y automática.
+Convierte múltiples documentos (PDF, Word, Excel, PowerPoint, HTML y más) a formato
+Markdown (`.md`) de forma local y automática.
 
-Ideal para preparar documentos antes de enviárselos a una IA (LLM) como
-**Claude**: el Markdown es compacto y fácil de entender para los modelos, lo
-que ayuda a **gastar menos tokens** y respetar los límites de archivos.
+Está pensado para preparar documentos antes de enviárselos a una IA (LLM) como Claude:
+el Markdown es compacto y fácil de entender para los modelos, lo que ayuda a gastar menos
+tokens y a respetar los límites de archivos.
 
----
+## Características
 
-## ✨ Características
-
-- Convierte **muchos formatos**, no solo PDF (usa la librería
+- Convierte muchos formatos, no solo PDF (usa la librería
   [MarkItDown](https://github.com/microsoft/markitdown) de Microsoft).
-- Procesa **todos los archivos de una carpeta** de una sola vez.
-- Muestra el **avance en tiempo real** y un **resumen final**.
-- Avisa antes de **sobrescribir** resultados anteriores.
+- Procesa todos los archivos de una carpeta de una sola vez.
+- Muestra el avance en tiempo real y un resumen final.
+- Avisa antes de sobrescribir resultados anteriores.
 
 ### Formatos soportados
-PDF · Word (`.docx`, `.doc`) · PowerPoint (`.pptx`, `.ppt`) ·
-Excel (`.xlsx`, `.xls`, `.csv`) · HTML · XML · JSON · TXT ·
-imágenes (`.jpg`, `.png`) · EPUB
+PDF, Word (`.docx`, `.doc`), PowerPoint (`.pptx`, `.ppt`), Excel (`.xlsx`, `.xls`, `.csv`),
+HTML, XML, JSON, TXT, imágenes (`.jpg`, `.png`) y EPUB.
 
----
+## Requisitos
 
-## 🛠️ Requisitos
+- Python 3.10 o superior.
+- Un editor de código (opcional, como VS Code).
 
-- **Python 3.10 o superior**
-- Un editor de código (opcional, como VS Code)
-
----
-
-## 📦 Instalación
+## Instalación
 
 1. Clona o descarga este repositorio.
 2. (Recomendado) Crea un entorno virtual:
@@ -48,23 +41,19 @@ imágenes (`.jpg`, `.png`) · EPUB
    pip install -r requirements.txt
    ```
 
----
+## Cómo usar
 
-## 🚀 Cómo usar
-
-1. Coloca tus documentos dentro de la carpeta **`documentos/`**.
+1. Coloca tus documentos dentro de la carpeta `documentos/`.
 2. Ejecuta el script:
 
    ```bash
    python convertidor.py
    ```
 
-3. Los archivos `.md` aparecerán en la carpeta **`resultados_markdown/`**,
-   listos para copiar a tu IA de preferencia.
+3. Los archivos `.md` aparecerán en la carpeta `resultados_markdown/`, listos para copiar
+   a tu IA de preferencia.
 
----
-
-## 📂 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 convertidor-markdown/
@@ -76,8 +65,6 @@ convertidor-markdown/
 └── README.md              <-- Este archivo
 ```
 
----
-
-## 📝 Licencia
+## Licencia
 
 Proyecto de uso libre con fines educativos y personales.
