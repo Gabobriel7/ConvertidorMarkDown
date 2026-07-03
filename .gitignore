@@ -1,0 +1,24 @@
+# Entornos virtuales de Python
+venv/
+.venv/
+env/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Documentos y resultados personales (no subir a GitHub)
+documentos/*
+resultados_markdown/*
+
+# Mantener las carpetas vacías en GitHub aunque su contenido se ignore
+!documentos/.gitkeep
+!resultados_markdown/.gitkeep
+
+# Archivos del sistema operativo
+Thumbs.db
+.DS_Store
+
+# Configuración de editores
+.vscode/
+.idea/
